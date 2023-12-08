@@ -1,5 +1,19 @@
-export default function Home(){
-    return(
-        <center><h1>MEGAFLIX</h1></center>
-     );
+import React from "react";
+import {Link} from "react-router-dom";
+import Header from "./Componentes/header";
+import Card from "./Componentes/card";
+
+export default function Destaque(){
+    const listinhamusic = JSON.parse(localStorage.getItem ("Lista")).slice(-3);
+    const destaqueapp = listinhamusic.slice(-3)
+
+    return (
+        <div>
+            <Header/>
+                <h2 class="destaquenome">Canzoni Preferite</h2>
+                <Card listinhamusic ={destaqueapp}/>
+                <footer class="rodape">  © Canzoni Preferite 2023</footer>
+            
+        </div>
+    );
 }

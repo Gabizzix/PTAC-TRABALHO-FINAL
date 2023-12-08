@@ -1,83 +1,234 @@
 body {
-    font-family: sans-serif;
-    background-color: #d82a2a;
+  background: #f2d0d1;
+}
+
+.button-red{
+  color: whitesmoke;
+  background-color: #A90623;
+  font-family: Atma, cursive;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.home-nome{
+  color: #A90623;
+  font-family: Atma, cursive;
+  text-shadow: 2px 2px 3px #ffffff
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 7
+  
+  0vh;
+  text-align: center;
+}
+
+.nome:hover{
+  padding: 5px;
+  margin: 0;
+  font-size: 15px;
+  font-family:'Paprika', sans-serif;
+  white-space: normal;
+}
+
+.nome{
+  padding: 5px;
+  font-size: 15px;
+  font-family:'Paprika', sans-serif;
+  color: #A90623;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name{
+color: #A90623;
+font-family:'Paprika', sans-serif;
+}
+.nomee{
+  color: #A90623;
+  font-family: Atma, cursive;
+  text-align: center;
+}
+
+.navbar-brand{
+  color: #A90623;
+  font-family: Atma, cursive;
+}
+
+.nav-item{
+  font-family: 'Paprika', sans-serif;
+}
+
+.produto-card{
+  background-color: #FFFF;
+  
+  display: inline-block;
+  width: 400px;
+  height: 490px;
+  padding: 5px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.produto-cardd{
+  background-color: #f2d0d1;
+  
+  display: inline-block;
+  width: 600px;
+  height: 600px;
+  padding: 5px;
+  margin: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-title{
+color: #A90623;
+font-family: Atma, cursive;
+}
+
+.card-subtitle{
+  color: #A90623;
+  font-family: Atma, cursive;
+}
+  .imagem{
+  height: 300px;
+  width: 290px;
+  
+}
+
+.imagem-home{
+  height: 500px;
+  width: 1500px;
+  margin-left: 190px;
+}
+
+.home-card{
+    background-color: #FFFF;
+  
+  display: inline-block;
+  width: 400px;
+  height: 500px;
+  padding: 5px;
+  margin: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+  .image{
+    height: 400px;
+    width: 400px;
   }
+
+  .img{
+  height: 90px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.nomeio{
+  text-align: center;
+}
+
+.produto-card{
+  text-align: center;
+}
+
+.imagem{
+  height: 50px;
+  width: 50px;
   
-  .container {
-    max-width: 40%;
-    margin: 3% auto;
-    background-color: #d82a2a;
-    padding: 20px;
-  }
+}
+
+.imagemm{
+  height: 10px;
+  width: 10px;
   
+}
+
+
+.card{
+  background-color: #FFFF;
   
+  display: inline-block;
+  width: 400px;
+  height: 490px;
+  padding: 5px;
+  margin: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.namee{
+  color: #A90623;
+  font-family: Atma, cursive;
+  text-align: center;
+}
+
+
+.produto-carde{
+  background-color: #FFFF;
   
-  h1 {
-    font-size: 2em;
-    margin: 3% 0 3% 5%;
-    font-weight: bold;
-  }
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cardee{
+  background-color: #FFFF;
   
-  input {
-    text-align: center;
-    width: 86.5%;
-    padding: 10px;
-    border: 1px solid #d82a2a;
-    border-radius: 4px;
-    margin-left: 5%;
-  }
+  display: inline-block;
+  width: 400px;
+  height: 460px;
+  padding: 5px;
+  margin: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.letrinhas{
+  padding: 5px;
+  font-size: 15px;
+  font-family:'Paprika', sans-serif;
+  color: #A90623;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.destaquenome{
+  color: #A90623;
+  font-family: Atma, cursive;
+  text-align: center;
+}
+
+.Card{
+  background-color: #FFFF;
   
-  button {
-    background-color: #d82a2a;
-    border: 1px solid #d82a2a;
-    color: #000000;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .titulo {
-    font-weight: bold;
-  }
-  
-  .delete {
-    margin: 1% 0 1% 43%;
-  }
-  
-  .card {
-    background-color: #d82a2a;
-    border: 10px solid #d82a2a;
-    border-radius: 10px; 
-    margin: auto;
-    text-align: center;
-    overflow: auto;
-  }
-  
-  .cardd {
-    background-color: #d82a2a;
-    max-width: 100%;
-    border-radius: 10px; 
-    margin: 5% 5% 5% 5%
-  }
-  
-  .add {
-    margin-left: 10%;
-  }
-  
-  span {
-    font-weight: bold;
-  }
-  
-  #container {
-    max-width: 40%;
-    margin: 10% auto;
-    background-color: #d82a2a;
-    padding: 20px;
-  }
-  
-  .imagem {
-  border: 1px solid #d82a2a;
-  width: 450px;
-  height: 290px;
-  margin-top: 5%;
-  }
+  display: inline-block;
+  width: 400px;
+  height: 460px;
+  padding: 5px;
+  margin: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.rodape{
+  bottom: 0;
+  position: fixed;
+  width: 110%;
+  background-color: #ffb3c8;
+  font-family: Atma, cursive;
+  color:#A90623;
+}

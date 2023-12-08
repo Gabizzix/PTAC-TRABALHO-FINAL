@@ -1,5 +1,8 @@
-export default function Home(){
+export default function Card(){
     return(
-        <center><h1>MEGAFLIX</h1></center>
-     );
+        <div className="grid grid-cols-3 gap-4 mt-6">
+              
+            
+            </div>
+    )
 }
