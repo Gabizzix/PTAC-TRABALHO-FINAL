@@ -1,0 +1,74 @@
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import Header from "/Componentes/header";
+import "/style.css";
+
+
+export default function Cadastre-se () {
+
+  const listaLocalStorage = JSON.parse(localStorage.getItem("Lista")) || []; 
+  const [lista, setLista] = useState(listaLocalStorage);
+  const [id,setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
+  const [video, setVideo] = useState("");
+  const [youtuber, setYoutuber] = useState("");
+  const [visualizacao, setVisualizacao] = useState("");
+  const [curtidas, setCurtidas] = useState("")
+  const [linkvideo, setLinkvideo] = useState("");
+
+  useEffect(() => { localStorage.setItem("Lista", JSON.stringify(lista)) }, [lista]);
+
+    const navigate = useNavigate();
+
+    const salvar = async(e) =>{
+    e.preventDefault();
+    await setLista([...lista, { video: video, artista: artista, visualizacao: visualizacao, curtidas: curtidas, linkvideo: linkvideo, id: id 
+    }]);
+
+        setId(id + 1);
+        setVideo("");
+        setYoutuber("");
+        setVisualizacao("");
+        setCurtidas("");
+        setLinkvieo("");
+    };
+ 
+    <div class="container"></div>
+    return 
+    <div class="nomeio">
+    <Header>
+    <Link to="/">Voltar Página Principal</Link>
+    <h1 class="nomee"> Cadastre Videos</h1>
+    <form class="produto-cardd" onSubmit={salvar}>
+
+    <div class="card" style=>
+    <div class="card-body">
+    <h5 class="card-title">Cadastre sua música favorita</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Informações</h6>
+  
+    <p class="nomee">Vídeo:</p>
+    <input value={musica} type="text"
+    onChange={(e) >{ setVideo(e.target.value)}}/>
+
+    <p class="nomee">Youtuber:</p>
+    <input value={artista} type="text"
+    onChange={(e) >{ setYoutuber(e.target.value)}/>
+
+    <p class="nomee">Visualizações:</p>
+    <input value={visualizacao} type="text"
+    onChange={(e)>{ setVisualizacao(e.target.value)}/>
+
+    <p class="nomee">Curtidas:</p>
+    <input value={curtidas} type="text"
+    onChange={(e)>{ setCurtidas(e.target.value)}/>
+
+    <p class="nomee">Link do video:</p>
+    <input value={linkmusic} type="text"
+    onChange={(e)>{ setLinkvideo(e.target.value)}/>
+      
+    <button className="button-red">Adicionar</button>
+    </div>
+    </div>
+    </form>
+    </div>                                                                                                                     
+}; 
+

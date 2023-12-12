@@ -1,12 +1,16 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-export default function Home() {
-   
+import {Link} from "react-router-dom";
+import Header from "/Componentes/header";
+import Card from "/Componentes/card";
+import Destaque from "/Destaque";
+
+export default function Home(){
+    const listinhamusic = JSON.parse(localStorage.getItem ("Lista")) || [];
+
     return (
         <div>
-            <h1>Home</h1>
-            <Link to="/todo">todo</Link>
-        </div>
-
-    );
+        <Header/>
+        <Card listinhamusic ={listinhamusic}/>
+            
+</div>
+);
 }
