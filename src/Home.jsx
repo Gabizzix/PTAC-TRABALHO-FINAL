@@ -1,5 +1,5 @@
 export default function Home(){
     return(
-        <h1> TRABALHO FINAL - PTAC </h1>
+        <h1> YOUTUBE KIDS </h1>
      );
 }
