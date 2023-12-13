@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 export default function Card({listavideo}){
 return(
 
-        listinhamusic.map((videos) => (
+        listavideo.map((videos) => (
         <div className="carde">
         <div class="produto-carde" key={videozinho.id}>
              
