@@ -4,12 +4,12 @@ import Card from "/Componentes/card";
 import Destaque from "/Destaque";
 
 export default function Home(){
-    const listinhamusic = JSON.parse(localStorage.getItem ("Lista")) || [];
+    const listavideo= JSON.parse(localStorage.getItem ("Lista")) || [];
 
     return (
         <div>
         <Header/>
-        <Card listinhamusic ={listinhamusic}/>
+        <Card listavideo ={listavideo}/>
             
 </div>
 );
